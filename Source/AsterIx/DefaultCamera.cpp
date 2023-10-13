@@ -1,7 +1,9 @@
 #include "DefaultCamera.h"
 
-ADefaultCamera::ADefaultCamera()
+void ADefaultCamera::BeginPlay()
 {
+	Super::BeginPlay();
+
 	const auto PlayerController = GetWorld()->GetFirstPlayerController();
 	PlayerController->SetViewTarget(this);
 }
