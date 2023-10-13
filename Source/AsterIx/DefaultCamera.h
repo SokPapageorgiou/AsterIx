@@ -8,8 +8,6 @@ UCLASS()
 class ASTERIX_API ADefaultCamera : public ACameraActor
 {
 	GENERATED_BODY()
-
-	virtual void BeginPlay() override;
 };
 
 
